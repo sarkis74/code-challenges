@@ -1,0 +1,22 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarkis74/code-challenges.git"
+  },
+  "author": "Sarkis Aghazarian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarkis74/code-challenges/issues"
+  },
+  "homepage": "https://github.com/sarkis74/code-challenges#readme",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}
