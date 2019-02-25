@@ -1,8 +1,8 @@
 'use strict';
 
-function Node(value) {
+function Node(value, next = null) {
     this.value = value;
-    this.head = null;
+    this.next = next;
 };
 
 
