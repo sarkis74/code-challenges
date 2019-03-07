@@ -9,7 +9,7 @@
 
 ![repo](https://github.com/sarkis74/code-challenges/tree/master/401-code-challenges)
 
-![travis](https://travis-ci.org/)
+![travis](https://travis-ci.org/sarkis74/code-challenges)
 
 ![back-end](https://code-challenges-401.herokuapp.com/)
 
