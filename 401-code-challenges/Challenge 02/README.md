@@ -30,3 +30,4 @@ I reversed the linked list with a loop and runner technique. But I couldn't capt
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![](https://github.com/sarkis74/code-challenges/blob/master/401-code-challenges/assets/CodeChallenge2.JPG)
