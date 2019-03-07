@@ -1,7 +1,7 @@
 'use strict';
 
 // Sarkis - Import constructor properties/methods
-const LinkedList = require('../linked-list');
+// const LinkedList = require('../linked-list');
 
 function Node(value, next = null) {
     this.value = value;
@@ -65,4 +65,16 @@ describe('Linked List  Data Structure', () => {
         expect(list.head.next.next.next.next.value).toEqual(4);
     });
 
+});
+
+describe('Check For Linked List Node Value', () => {
+    it('Can successfully return k node value', () => {
+        let list = new LinkedList();
+        list.append('a');
+        list.append('b');
+        list.append('c');
+        list.append('d');
+        expect(list.returnNodeValue(2)).toEqual('c');
+        expect(list.length).toEqual(5);
+    });
 });

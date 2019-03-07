@@ -65,17 +65,41 @@ class LinkedList{
         }
         return this.head;
     }
-}
 
-// let list = new LinkedList();
-// list.append(1);
-// list.append(2);
-// list.append(3);
-// list.insertAfter(1, 'a');
-// list.append(4);
+    returnNodeValue(k) {
 
+        let following = this.head;
+        let current = this.head;
+        let previous = null;
+        let counter = 0;
+        let temp;
+        let tempArr = [];
 
-console.log(list.head.value)
-console.log(list.head)
+        while (following) {
+            following = following.next;
+            current.next = previous;
+            previous = current;
+            current = following;
+            tempArr.push(previous.value);
+            counter++;
+        }
+        tempArr[counter - k] ? temp = tempArr[counter - k] : temp = 'Value Not Found';
+        return temp;
+    }
+};
+
+const list = new LinkedList();
+
+list.append('a');
+list.append('b');
+list.append('c');
+list.append('d');
+
+/*Node {
+  value: 'a',
+  next: Node { value: 'b', next: Node { value: 'c', next: { value: 'd', next: null } } } }
+*/
+
+console.log(list.returnNodeValue(2));
 
 module.exports = LinkedList;
